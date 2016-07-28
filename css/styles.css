@@ -1,0 +1,515 @@
+/*fullWidth*/
+.fullWidth {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+
+
+/*Links*/
+a {
+  color: white;
+  text-decoration: none;
+
+   
+}
+a:hover {
+  color: yellowgreen;
+
+}
+
+p a {
+  border-bottom: 1px solid #dfe2e5;
+}
+
+.divider{
+    width: 100%;
+    margin: 0px;
+}
+body{
+    margin:0px;
+    color: black;
+}
+/*=======================
+HEADER
+========================*/
+.primary-header{
+    padding:0px;
+    background-color: #1662F4;
+    color: white;
+    max-width: 100%;
+    height: 150px;
+}
+
+.logo-container{
+    display: inline-block;  
+}
+.star-logo{
+    float:left;
+    display:flex;
+    margin:20px;
+}
+
+.star-logo img{
+    width:4em;
+    height:4em;
+}
+
+
+.prime-name{
+    font-family: Raleway,cursive;
+    line-height: 4px;
+}
+
+.tag{
+    font-family: Pacifico;
+    font-size: 12px;
+    margin:0px;
+}
+
+.top-nav{
+    float: right;
+    padding:20px;
+}
+
+.top-nav a{
+    padding:15px;
+    display:inline-block;
+    font-family: cursive;
+     color:white;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif
+}
+
+.top-nav a:link{
+     color:white;
+}
+
+.top-nav a:active{
+    border: solid 1px blue;
+    color:white;
+    background:;
+    border-radius:10px;
+}
+
+.top-nav a:hover{
+    border: solid 1px blue;
+    color:blue;
+    background:white;
+    border-radius:10px;
+}
+
+/*=====================
+SECTIONs
+======================*/
+/*----------------------
+HOME PAGE
+----------------------*/
+.hero-container {
+  color: #fff;
+  line-height: 44px;
+    padding: 20px 70px 0px 70px;
+ 
+}
+
+.hero-container img{
+    width:100%;
+}
+.row{
+  min-width: 1000px;
+  background: #fff;
+  padding: 6px 0 44px 0;
+}
+
+.grid {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.grid, .col-1{
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.col-1{
+  display: inline-block;
+  vertical-align: top;
+  width: 29.33%;
+}
+
+.teaser a:hover h3 {
+  color: #a9b2b9;
+}
+.teaser img {
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 22px;
+  max-width: 100%
+}
+
+.teaser h5{
+    font-family: Poiret One,Lobster;
+    font-size:20px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.teaser a h3{
+    font-family: Poiret One,Lobster;
+    font-size:20px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.location-container{
+    text-align: center;
+    padding:25px;
+    margin-bottom: 50px;
+}
+
+.location-text{
+    font-family: Poiret One, Lobster, cursive;
+    font-size:25px;
+    
+}
+
+.location-map{
+    
+}
+
+/*-----------------------------
+RESERVATION PAGE
+-------------------------------*/
+.row-reservation{
+  min-width: 1000px;
+  background: #fff;
+  padding: 6px 0 0px 0;
+    margin-top: 45px;
+}
+
+.teaser h4{
+    text-align: center;
+}
+
+.leading-title{
+    font-family:cursive;
+    text-align:center;
+}   
+
+.tag-title{
+    font-family:monospace;    
+    font-size:16px;
+    text-align:center;
+}
+
+/*reservation form section*/
+#reservation-form-container{
+    margin:60px;
+}
+/*actual reservation form*/
+#reservation-form{
+    padding:25px;
+}
+
+/*class for first and last names*/
+.col-6-1{
+    width:100%;
+    display:flex;
+}
+
+/*containers for all inputs*/
+.input-block{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: solid 1px #000;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    margin: 10px;
+}
+
+label{
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    display: block;
+    margin: 0;
+    font-weight: 300;
+    z-index: 1;
+    color: #333;
+    font-size: 18px;
+    line-height: 10px;
+}
+
+/*Styled inputs*/
+.input{
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    font-size: 18px;
+    color: #333;
+}
+
+/*class for room block and amount block*/
+.col-12{
+    width:100%;
+    display:flex;
+}
+
+/*room container*/
+.room-block{
+    width:80%;
+    margin:10px;
+}
+/*style for select options*/
+.select{
+    width:100%;
+    border: solid 1px #000;
+    border-radius: 1px;
+    padding:10px;
+}
+.amount-block{
+    width:15%;
+    margin:10px;
+}
+/*amount input*/
+.amount{
+        width:100%;
+    border: solid 1px #000;
+    border-radius: 1px;
+    padding:10px;
+}
+#payment-title{
+    font-family: Poiret One;
+    text-align:center;
+    
+}
+/*payment option*/
+.payment-options{
+    padding:25px;
+    margin:10px;
+}
+
+.payment-items{
+    display:inline-table;
+    width:24.7%;
+    text-align: center;
+}
+
+.payment-items img{
+    text-align: center;
+}
+
+.payment-items p{
+    text-align: center;
+}
+
+#m-pesa{}
+#airtel{}
+#master-card{}
+#visa{}
+
+/*submit button container*/
+.submit-btn-container{
+    text-align: center;
+}
+/*submit button*/
+.submit{
+    text-align: center;
+    background-color: #008080;
+    color: #FFF;
+    font-size: 120%;
+    height: 80px;
+    width:30%;
+    box-shadow: 0 5px rgba(199, 138, 138, 0.5);
+}
+
+/*---------------------------
+GALLERY PAGE
+----------------------------*/
+.row-gallery{
+  min-width: 1000px;
+  background: #fff;
+  padding: 6px 0 44px 0;
+}
+
+.grid-gallery {
+  margin: 0 auto;
+  width: 1000px;
+    padding:35px;
+}
+
+.grid-gallery, .col-1{
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.col-1{
+  display: inline-block;
+  vertical-align: top;
+  width: 29.33%;
+}
+
+.teaser-gallery a:hover h3 {
+  color: #a9b2b9;
+}
+.teaser-gallery img {
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 22px;
+  max-width: 100%
+}
+
+.teaser-gallery a h3{
+    font-family: Poiret One,Lobster;
+    font-size:20px;
+    line-height: 25px;
+    text-align: center;
+}
+
+/*--------------------------
+OFFERS
+--------------------------*/
+#offer-section{
+    margin:30px;
+}
+
+#intro-container{
+    text-align: center;
+    margin:50px;
+}
+
+#intro-container h1{
+    font-family: Montserrat,cursive;
+}
+
+#tag{
+    text-align:center;
+    font-family:Lora,cursive;
+}
+
+#deals-offered{
+    display:block;    
+}
+
+#wedding-offer, #rooms-offer{
+    display:flex;
+    padding:25px;
+}
+
+.col-6-offer{
+    display:inline-block;
+    width:50%;
+}
+
+.col-6-offer img{
+    height: 50%;
+    width:100%;
+}
+
+.img-on-deals{
+    text-align: center;
+}
+
+.offer-title{
+    font-family: Alegreya, sans-serif;
+    font-weight: 800;
+    margin-top: -27px;
+}
+
+.txt-on-deals{
+    padding:25px;
+}
+#wedding-txt{
+    font-family:Cormorant;
+}
+
+.view-offer-btn{    
+    background: none;
+    display: inline-block;
+    border-radius: 0px;
+    padding: 0px 0px;
+    box-shadow: 0 0 0px 0px rgba(0,0,0,0);
+}
+
+.view-offer-btn a {
+    transition: all 0.5s ease;
+    background: #fff;
+    color: #9a7f46;
+    border: 1px solid;
+    padding: 10px 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 0;
+    box-shadow: none;
+}
+.view-offer-btn a:hover {
+    color: #9a7f46;
+}
+
+.view-offer-btn a:link {
+    color: #9a7f46;
+    text-decoration: none;
+    font-family: 'Libre Baskerville', 'Times New Roman',Helvetica,sans-serif;
+}
+
+.view-offer-btn a {
+    color: #fff;
+}
+.view-offer-btn a:visited {
+    color: #9f8e68;
+    text-decoration: none;
+    font-family: 'Libre Baskerville', 'Times New Roman', Helvetica, sans-serif;
+}
+/*======================
+FOOTER
+======================*/
+footer{
+    background-color:blue;
+    color: white;
+}
+/*bottom footer*/
+.bottom-footer{
+    padding:10px;
+    color: white;
+}
+
+.bottom-footer small{
+    padding:10px;
+    display: inline-block;
+   
+}
+
+.bottom-nav{
+    float:right;
+    padding:20px;
+    color: white;
+   
+}
+
+/*top social container footer*/
+.social-container{
+    text-align:center;
+    padding:20px;
+    border-top:groove;
+  
+}
+
+.creator-container{
+    text-align:center;
+    font-family: cursive;
+    font-size: 0.65em;
+    border-top:groove;
+}
+
+.icon-food{
+    width:1em;
+    height:1em;
+}
+h3{
+   color:#1662F4;
+    text-align: center;
+}

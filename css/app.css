@@ -1,0 +1,522 @@
+.container {
+  padding: 60px 0;
+}
+h2 {
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.200em;
+  color: #333;
+}
+a {
+  font-size: 12px;
+  font-weight: 700;
+  color: #333;
+  text-decoration: none;
+}
+.bg__primary {
+  background: #333;
+}
+  h2 {
+    color: white;
+  }
+
+section {
+  display: block;
+  min-height: 250px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.menu__container {
+  position: relative;    
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.menu__item {   
+    display: inline-block;
+    margin: 16px;
+}
+.menu__link {
+  font-weight: 700;
+  letter-spacing: 0.200em;
+  text-transform: uppercase;
+  cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);  
+  
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+/* ------------- Barrido ---------- */
+.menu--barrido {
+}
+  .menu__link {
+    position: relative;    
+    padding: 15px 0 10px 0;   
+    color: white;
+    
+    &::before,
+    &::after {
+      content:'';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+    }
+    
+    &::before {
+      content:'';
+      background: #bfbfbf;
+      transition: width 0.2s;
+    }
+    
+    &::after {
+      content:'';
+      background: #d81455;
+      transition: width 0.3s, color 0.3s;
+    }
+    
+    &:hover {
+      }
+      &::before {
+      }
+        width: 100%; 
+      }      
+    
+  }
+  
+  .menu__item--current {
+      color: #d81455;
+}
+    .menu__link {
+      color: #d81455;
+}
+      &::after {
+        width: 100%;  
+      }      
+
+
+/* ----------  Venus ------------------ */ 
+.menu--venus .menu__link {
+  position: relative;
+  display: block;
+  padding: 15px 0;
+  text-align: center;
+  color: #b5b5b5;
+  transition: color 0.3s;
+  
+  &:hover,
+  &:focus {
+    color: #929292;
+  }
+}
+
+.menu--venus .menu__item--current .menu__link {
+  color: #d94f5c;
+}
+
+.menu--venus .menu__link::before {
+  content:'';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: #d94f5c;
+  transform: scale3d( 0, 1, 1 );
+  transition: transform 0.2s;
+}
+
+.menu--venus .menu__item--current .menu__link::before,
+.menu--venus .menu__link:hover::before {
+  transform: scale3d( 1, 1, 1 );
+  transition-timing-function: cubic-bezier( 0.4, 0, 0.2, 1 );
+}
+
+/* --------  Mart ------------ */
+
+
+.menu--mart {
+}
+   .menu__link {
+    position: relative;
+    padding: 15px 0;
+    color: #b5b5b5;
+    transition: color 0.3s;
+     
+     &::before,
+     &::after {
+       content: '';
+       position: absolute;
+       width: 100%;
+       height: 1px;
+       background: #d81455;
+       transform: scale3d( 0, 1, 1 );
+       transition: all 0.2s;
+     }
+     
+     &:hover {
+       color: #d81455;
+       &::before,
+       &::after {
+         transform: scale3d( 1, 1, 1 );
+       }
+     }
+     
+     &::before {
+       top: 0;
+       left: 0;
+     }
+     
+     &::after {
+       bottom: 0;
+       right: 0;
+     }
+  }  
+}
+
+.menu--mart .menu__item--current .menu__link {
+  color: #d81455;
+  &::before,
+  &::after {
+    transform: scale3d( 1, 1, 1 );
+  }  
+}
+
+/* -------------- FM --------------- */
+.menu--fm {
+}
+  .menu__item {
+    overflow: hidden;
+  }
+  
+  .menu__link {
+    position: relative;
+    display: block;
+    min-width: 130px;
+    padding: 15px 0;
+    overflow: hidden;
+    text-align: left;
+    
+    &:before {
+      content:'';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 300%;
+      height: 50px;
+      opacity: 0;
+      background: url('http://devel.berepublic.es/alberto/codepen-resources/line.svg') no-repeat top left;
+      transform: translate3d( 130px, 0, 0 );
+      transition: transform 0s 0.3s, opacity 0.3s;
+    }
+  }
+  
+  .menu__item--current .menu__link::before {
+    opacity: 1;
+    transform: translate3d( -260px, 0, 0 );
+    transition: transform 0.5s;
+  }
+}
+
+/* ----------  ---------------- */
+
+/*
+Inspired to http://tympanus.net/Development/LineMenuStyles/
+*/
+
+// Common styles to the example
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans Condensed', sans-serif; 
+}
+.container {
+  padding: 60px 0;
+}
+h2 {
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.200em;
+  color: #333;
+}
+a {
+  font-size: 12px;
+  font-weight: 700;
+  color: #333;
+  text-decoration: none;
+}
+.bg__primary {
+  background: #333;
+}
+  h2 {
+    color: white;
+  }
+}
+section {
+  display: block;
+  min-height: 250px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.menu__container {
+  position: relative;    
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.menu__item {   
+    display: inline-block;
+    margin: 16px;
+}
+.menu__link {
+  font-weight: 700;
+  letter-spacing: 0.200em;
+  text-transform: uppercase;
+  cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);  
+  
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+/* ------------- Barrido ---------- */
+.menu--barrido {
+}
+
+  .menu__link {
+    position: relative;    
+    padding: 15px 0 10px 0;   
+    color: white;
+    
+    &::before,
+    &::after {
+      content:'';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+    }
+    
+    &::before {
+      content:'';
+      background: #bfbfbf;
+      transition: width 0.2s;
+    }
+    
+    &::after {
+      content:'';
+      background: #d81455;
+      transition: width 0.3s, color 0.3s;
+    }
+    
+    &:hover {
+      &::before {
+        width: 100%; 
+      }      
+    }
+  }
+  
+  .menu__item--current {
+    .menu__link {
+      color: #d81455;
+      &::after {
+        width: 100%;  
+      }      
+    }
+  }
+  
+}
+
+/* ----------  Venus ------------------ */ 
+.menu--venus .menu__link {
+  position: relative;
+  display: block;
+  padding: 15px 0;
+  text-align: center;
+  color: #b5b5b5;
+  transition: color 0.3s;
+  
+  &:hover,
+  &:focus {
+    color: #929292;
+  }
+}
+
+.menu--venus .menu__item--current .menu__link {
+  color: #d94f5c;
+}
+
+.menu--venus .menu__link::before {
+  content:'';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: #d94f5c;
+  transform: scale3d( 0, 1, 1 );
+  transition: transform 0.2s;
+}
+
+.menu--venus .menu__item--current .menu__link::before,
+.menu--venus .menu__link:hover::before {
+  transform: scale3d( 1, 1, 1 );
+  transition-timing-function: cubic-bezier( 0.4, 0, 0.2, 1 );
+}
+
+/* --------  Mart ------------ */
+
+
+.menu--mart {
+}
+   .menu__link {
+    position: relative;
+    padding: 15px 0;
+    color: #b5b5b5;
+    transition: color 0.3s;
+     
+     &::before,
+     &::after {
+       content: '';
+       position: absolute;
+       width: 100%;
+       height: 1px;
+       background: #d81455;
+       transform: scale3d( 0, 1, 1 );
+       transition: all 0.2s;
+     }
+     
+     &:hover {
+       color: #d81455;
+       &::before,
+       &::after {
+         transform: scale3d( 1, 1, 1 );
+       }
+     }
+     
+     &::before {
+       top: 0;
+       left: 0;
+     }
+     
+     &::after {
+       bottom: 0;
+       right: 0;
+     }
+  }  
+}
+
+.menu--mart .menu__item--current .menu__link {
+  color: #d81455;
+  &::before,
+  &::after {
+    transform: scale3d( 1, 1, 1 );
+  }  
+}
+
+/* -------------- FM --------------- */
+.menu--fm {
+}
+  .menu__item {
+    overflow: hidden;
+    
+  }
+  
+  .menu__link {
+    position: relative;
+    display: block;
+    min-width: 130px;
+    padding: 15px 0;
+    overflow: hidden;
+    text-align: left;
+    
+    &:before {
+      content:'';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 300%;
+      height: 50px;
+      opacity: 0;
+      background: url('http://devel.berepublic.es/alberto/codepen-resources/line.svg') no-repeat top left;
+      transform: translate3d( 130px, 0, 0 );
+      transition: transform 0s 0.3s, opacity 0.3s;
+    }
+  }
+  
+  .menu__item--current .menu__link::before {
+    opacity: 1;
+    transform: translate3d( -260px, 0, 0 );
+    transition: transform 0.5s;
+  }
+}
+
+/* ----------  ---------------- */
+
+.menu--dotted {
+}
+  .menu__item {
+    overflow: hidden;
+  }
+  
+  .menu__link {
+    position: relative;
+    display: block;
+    min-width: 130px;
+    padding: 15px 0;
+    overflow: hidden;
+    text-align: left;
+    color: #b5b5b5;
+    }
+    
+    &:before {
+      content:'';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 300%;
+      height: 50px;
+      opacity: 0;
+      background: url('http://devel.berepublic.es/alberto/codepen-resources/dotted-line.svg') no-repeat top left;
+      transform: translate3d( 130px, 0, 0 );
+      transition: transform 1s 3s, opacity 0.3s;
+    }
+  
+  
+  .menu__item--current .menu__link::before {
+    opacity: 1;
+    transform: translate3d( -260px, 0, 0 );
+    transition: transform 0.8s;
+  }
+
+
+
+
+
+
+
+
+
+
+
