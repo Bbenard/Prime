@@ -5,6 +5,11 @@
    margin-right: auto;
    max-width: initial;
 }
+.column.small-centered {
+margin-left: auto;
+margin-right: auto;
+float: none !important; 
+}
 
 
 /*Links*/
