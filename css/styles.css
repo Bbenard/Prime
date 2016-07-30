@@ -3,7 +3,6 @@
    width: 100%;
    margin-left: auto;
    margin-right: auto;
-   max-width: initial;
 }
 .column.small-centered {
 margin-left: auto;
@@ -472,7 +471,7 @@ OFFERS
 FOOTER
 ======================*/
 footer{
-    background-color:black;
+    background-color:blue;
     color: white;
 }
 /*bottom footer*/
@@ -530,4 +529,8 @@ h2 {
    margin: 0 auto;
    width: 300px;
    height: 50px;
+}
+h1{
+   color:#1662F4;
+    text-align: center;
 }
