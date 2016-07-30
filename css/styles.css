@@ -24,7 +24,6 @@ p a {
 }
 
 .divider{
-    width: 100%;
     margin: 0px;
 }
 body{
@@ -39,7 +38,7 @@ HEADER
     background-color: #1662F4;
     color: white;
     max-width: 100%;
-    height: 150px;
+    height:150px;
 }
 
 .logo-container{
@@ -468,7 +467,7 @@ OFFERS
 FOOTER
 ======================*/
 footer{
-    background-color:blue;
+    background-color:black;
     color: white;
 }
 /*bottom footer*/
